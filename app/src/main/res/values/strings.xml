@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">unit converter</string>
+    <string name="calculator">calculator</string>
+    <string name="exchange_rate">Exchange Rate</string>
+    <string name="unit_converter">unit converter</string>
+    <string name="ft">ft</string>
+    <string name="m">m</string>
+    <string name="meter">Meter</string>
+    <string name="foot">Foot</string>
+</resources>

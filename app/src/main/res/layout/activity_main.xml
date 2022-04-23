@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:backgroundTint="#101010"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculator"
+        android:textColor="#E1D8D8"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/exchange_rate"
+        android:textColor="#E3D7D7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/calculator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/unit_converter"
+        android:textColor="#FAF3F3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/exchange"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/meter"
+        android:layout_width="318dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="60dp"
+        android:autofillHints=""
+        android:backgroundTint="#0E0E0E"
+        android:hint="@string/meter"
+        android:inputType="numberDecimal"
+        android:textColor="#E6DEDE"
+        android:textColorHint="#ECE1E1"
+        app:layout_constraintBottom_toTopOf="@+id/foot"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/logo_meter"
+        android:layout_width="30dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/m"
+        android:textColor="#BF1010"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/meter"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/foot"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="450dp"
+        android:autofillHints=""
+        android:hint="@string/foot"
+        android:inputType="numberDecimal"
+        android:textColor="#DDD4D4"
+        android:textColorHint="#E8DEDE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="450dp"
+        android:text="@string/ft"
+        android:textColor="#CD0E0E"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/foot"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
